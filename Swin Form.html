@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <img src="logo.png">  
+<h1>CWA Helpdesk Appointment</h1>
+    <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+    <p>Check Blackboard for when CWA tutors will be there</p>
+   <form action="submit.php" method="post">
+    <fieldset>
+    <legend>Student Details</legend>
+    <label for="Student ID">Student ID:</label>
+    <input type="text" id="Student ID" name="Student ID"
+    pattern="\d{7,10}"
+    title="between 7 and 10 digits entered" required>
+  <br>
+    <label for="Given name">Given name:</label>
+    <input type="Given name" id="Given name" name="Given name" required>
+    <label for="Family name">Family name</label>
+    <input type="Family name" id="Family name" name="Family name"
+    title="only alphabetical characters allowed
+           maximum of 15 characters allowed"
+     required>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Your unit</legend>
+        <input type="radio" id="COS10011" name="unit" value="COS10011">
+        <label for="unit">COS10011</label>
+        <input type="radio" id="COS60004" name="unit" value="COS60004">
+        <label for="unit">COS60004</label>
+        <input type="radio" id="COS60007" name="unit" value="COS60007">
+        <label for="unit">COS60007</label>
+        <br>
+         <label for="Your tutor">Your tutor:</label>
+        <select id="Your tutor" name="Your tutor">
+            <option value="Please select">Please select</option>
+        </select>
+   </fieldset>
+   <fieldset>
+    <legend>Issue</legend>
+    <label>
+            <input type="checkbox" name="Issue"> HTML
+    </label>
+    <label>
+            <input type="checkbox" name="Issue"> CSS
+    </label>
+    <label>
+            <input type="checkbox" name="Issue"> Java Script
+    </label>
+<label>
+            <input type="checkbox" name="Issue"> PHP
+    </label>
+    <label>
+            <input type="checkbox" name="Issue"> MySQL
+    </label>
+    <label for="Description of Issue">Description of Issue:</label>
+        <br>
+        <textarea id="Description of Issue" name="Description of Issue" rows="4" cols="30" placeholder="Write description of your problems here..."></textarea>
+        <br>
+   </fieldset>
+   <fieldset>
+    <legend>Prefferd Date/Time></legend>
+     <label for="Date">Date:</label>
+    <input type="date" id="date" name="date">
+    <br>
+    <label for="Time">Time:</label>
+    <input type="time" id="time" name="time">
+   </fieldset>
+ <input type="submit" value="Book">
+  <input type="submit" value="Reset form">
+</form>
+</html>
